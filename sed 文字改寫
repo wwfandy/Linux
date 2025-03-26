@@ -1,0 +1,7 @@
+[root@localhost ~]# echo old old | sed s/old/new/g
+new new
+
+[root@localhost ~]# echo "this is bad" | sed 's/bad/good/w out.txt'
+this is good
+[root@localhost ~]# cat out.txt
+this is good
